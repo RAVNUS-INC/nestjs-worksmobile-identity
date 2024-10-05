@@ -64,7 +64,7 @@ export class WorksmobileTokenService {
           assertion: token,
           client_id: this.config.get('NAVER_WORKS_CLIENT_ID'),
           client_secret: this.config.get('NAVER_WORKS_SECRET_ID'),
-          scope: 'contact.read,directory.read',
+          scope: this.config.get('NAVER_WORKS_SCOPE'),
         },
         {
           headers: {
