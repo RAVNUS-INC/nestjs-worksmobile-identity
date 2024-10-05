@@ -14,3 +14,9 @@ export const generateBusinessSupportAttendanceUsersClockOut = (
   userId: string,
 ): string =>
   `${Endpoint.BASE}/business-support/attendance/users/${userId}/clock-out`;
+
+// https://www.worksapis.com/v1.0/bots/{botId}/users/{userId}/messages
+export const generateBotsUsersMessages = (
+  botId: string,
+  userId: string,
+): string => `${Endpoint.BASE}/bots/${botId}/users/${userId}/messages`;
